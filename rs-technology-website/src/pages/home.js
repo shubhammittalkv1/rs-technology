@@ -5,6 +5,9 @@ import MastHead from '../assets/img/bg-masthead.jpg';
 import User from '../assets/img/user.jpg';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card';
+import CardDeck from 'react-bootstrap/CardDeck';
 class home extends Component {
     render() {
         return (
@@ -238,6 +241,69 @@ class home extends Component {
                     <div className="col-lg-4 col-md-4 col-xs-6">
                         <div className="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460269/104840a62d46c05d285762857fecb61a.png" className="img-fluid" alt=""/> </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="clients" className="section-bg">
+            <div className="container">
+                <div className="section-header">
+                    <h3>Testimonials</h3>
+                    {/* <p>Meet our happy clients</p> */}
+                </div>
+                <div>
+                <Carousel className="testimonial-carousel" controls={false}>
+                    <Carousel.Item>
+                    <Card className="testimonial-card">
+                            <Card.Body className="text-center">
+                                <div className="user-img">
+                                    <img src={User} className="img-fluid" alt="userimage"/>
+                                </div>
+                            <Card.Title>Testimonial 2 Title</Card.Title>
+                            <Card.Text className="font-italic text-muted">
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
+                            </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                            <small className="text-muted">Last updated 3 mins ago</small>
+                            </Card.Footer>
+                        </Card>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <Card className="testimonial-card">
+                            <Card.Body className="text-center">
+                                <div className="user-img">
+                                    <img src={User} className="img-fluid" alt="userimage"/>
+                                </div>
+                            <Card.Title>Testimonial 2 Title</Card.Title>
+                            <Card.Text className="font-italic text-muted">
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
+                            </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                            <small className="text-muted">Last updated 3 mins ago</small>
+                            </Card.Footer>
+                        </Card>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <Card className="testimonial-card">
+                            <Card.Body className="text-center">
+                                <div className="user-img">
+                                    <img src={User} className="img-fluid" alt="userimage"/>
+                                </div>
+                            <Card.Title>Testimonial 2 Title</Card.Title>
+                            <Card.Text className="font-italic text-muted">
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
+                            </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                            <small className="text-muted">Last updated 3 mins ago</small>
+                            </Card.Footer>
+                        </Card>
+                    </Carousel.Item>
+                </Carousel>
                 </div>
             </div>
         </section>

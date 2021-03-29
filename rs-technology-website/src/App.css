@@ -10403,3 +10403,22 @@ ul.custom-list {
 #clients img {
   transition: all 0.4s ease-in-out
 }
+.testimonial-carousel .testimonial-card {
+  width: 75%;
+  margin: auto;
+  border: 0.25rem solid #373737;
+}
+.testimonial-carousel .testimonial-card .user-img{
+  margin: auto;
+}
+.testimonial-carousel .testimonial-card .user-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonial-carousel .carousel-indicators li {
+  background-color: #373737;
+}
+.testimonial-carousel .carousel-indicators {
+  top: 105%;
+}
