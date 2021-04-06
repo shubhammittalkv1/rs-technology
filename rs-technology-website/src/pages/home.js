@@ -7,8 +7,22 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
-import CardDeck from 'react-bootstrap/CardDeck';
+import { Modal } from 'react-bootstrap';
 class home extends Component {
+    state = {
+        AddressModalShow: false
+    }
+    handleAddressClose() {
+      this.setState({ 
+        AddressModalShow: false
+      });
+    }
+    // Below Code used to show Popup
+    viewAddressModalShow = (data) => {
+      this.setState({
+        AddressModalShow: true
+      });
+    }
     render() {
         return (
             <div className="wrapper">
@@ -380,8 +394,52 @@ class home extends Component {
                 </div> */}
             </div>
         </section>
-		        <Footer />
-            </div>
+        <a class="float" onClick={this.viewAddressModalShow.bind(this)}>
+        <i class="fa fa-plus my-float"></i>
+        </a>
+       {/* Show Address Modal */}
+      <Modal
+        show={this.state.AddressModalShow}
+        onHide={this.handleAddressClose.bind(this)}
+        backdrop="static"
+        size="lg"
+        keyboard={false}
+        centered
+        >
+        <Modal.Header closeButton>
+          <Modal.Title>Empty Popup</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p><strong>Jonathan Doe Limited Company</strong></p>
+          <div className="row">
+            <div className="col-2"><p className="grey-text">Address Line 1: </p></div>
+            <div className="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+          </div>
+          <div className="row">
+            <div className="col-2"><p className="grey-text">Address Line 2: </p></div>
+            <div className="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+          </div>
+          <div className="row">
+            <div className="col-2"><p className="grey-text">City: </p></div>
+            <div className="col"><p>CityName</p></div>
+          </div>
+          <div className="row">
+            <div className="col-2"><p className="grey-text">State: </p></div>
+            <div className="col"><p>StateName</p></div>
+          </div>
+          <div className="row">
+            <div className="col-2"><p className="grey-text">Country: </p></div>
+            <div className="col"><p>US</p></div>
+          </div>
+          <div className="row">
+            <div className="col-2"><p className="grey-text">ZipCode: </p></div>
+            <div className="col"><p>110022.</p></div>
+          </div>
+        </Modal.Body>
+      </Modal>
+      {/* End of Modal Code */}
+		<Footer />
+    </div>
 )
     }
 }
