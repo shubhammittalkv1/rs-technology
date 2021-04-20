@@ -7,11 +7,12 @@ import Orion from '../assets/img/clients/orion.jpg';
 import Arthale from '../assets/img/clients/arthale.jpg';
 import Strider from '../assets/img/clients/strider.jpg';
 import User from '../assets/img/user.jpg';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+// import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import { Modal } from 'react-bootstrap';
+import { ReactTypeformEmbed } from 'react-typeform-embed';
 class home extends Component {
     state = {
         AddressModalShow: false
@@ -358,15 +359,15 @@ class home extends Component {
                             <div className="card-body text-center">
                                 <i className="fas fa-map-marked-alt mb-2"></i>
                                 <h4 className="text-uppercase mb-2">Address</h4>
-                                <div className="small text-black-50">R.S Technology F-1, B-138, Dadu Dayal Nagar Mansarovar, Jaipur-302020, India.</div>
+                                <div className="small text-black-50">Plot No. 30, Floor Ground Block DP, Pitampura, Delhi, India 110034 </div>
                                 <hr className="my-5" />
                                 <i className="fas fa-envelope mb-2"></i>
                                 <h4 className="text-uppercase mb-2">Email</h4>
-                                <div className="small text-black-50"><a href="#!">contact@rs-tech.in</a></div>
+                                <div className="small text-black-50"><a href="#!">rhabdom.solutions@gmail.com</a></div>
                                 <hr className="my-5" />
                                 <i className="fas fa-mobile-alt mb-2"></i>
                                 <h4 className="text-uppercase mb-2">Phone</h4>
-                                <div className="small text-black-50">+91-7737889813 || +91-7568561199</div>
+                                <div className="small text-black-50">+91-7737889813</div>
                             </div>
                         </div>
                     </div>
@@ -374,7 +375,7 @@ class home extends Component {
                         <div className="card py-4 h-100">
                             <div className="card-body">
                             <h4 className="text-uppercase mb-5">Reach Us</h4>
-                            <Form>
+                            {/* <Form>
                             <Form.Group controlId="name">
                                 <Form.Control type="text" placeholder="Name" />
                             </Form.Group>
@@ -388,7 +389,8 @@ class home extends Component {
                                 <Form.Control as="textarea" rows={3} placeholder="Message"/>
                             </Form.Group>
                             <Button variant="outline-dark" type="submit" className="w-100 my-5">Submit</Button>
-                            </Form>
+                            </Form> */}
+                             <ReactTypeformEmbed url="https://ac3r5x7mdju.typeform.com/to/puDDfzPm" />
                             </div>
                         </div>
                     </div>
@@ -401,8 +403,8 @@ class home extends Component {
             </div>
         </section>
         <a className="float" href="#" onClick={this.viewAddressModalShow.bind(this)}>
-        <i className="fa fa-plus my-float"></i>
-        <span class="tooltiptext">Need Assistance</span>
+        {/* <i className="fa fa-plus my-float"></i> */}
+        <span className="tooltiptext">Need Assistance ?</span>
         </a>
        {/* Show Address Modal */}
       <Modal
@@ -414,19 +416,10 @@ class home extends Component {
         centered
         >
         <Modal.Header closeButton>
-          <Modal.Title>Empty Popup</Modal.Title>
+          <Modal.Title>Let us know more about you</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-            <a className="typeform-share button" href="https://form.typeform.com/to/rtYZocCD?typeform-medium=embed-snippet" data-mode="popup" style={{display:'inline-block', textDecoration:'none', backgroundColor:'#0445AF', color:'white', cursor:'pointer', fontFamily:'Helvetica,Arial,sans-serif',fontSize:20 + 'px', lineHeight:50 + 'px', textAlign:'center', margin:0 , height:50 + 'px', padding:0+'px ' + 33+'px ', borderRadius:25+'px', maxWidth:100+'%',whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis',fontWeight:bold}} data-size="100" target="_blank">Launch me </a> 
-            {/* <script> 
-                (function() { 
-                let qs,js,q,s,d=document;
-                let gi=d.getElementById;
-                let ce=d.createElement
-                let gt=d.getElementsByTagName
-                let id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) 
-                } })() 
-            </script> */}
+        <Modal.Body style={{height: 400 + 'px'}}>
+            <ReactTypeformEmbed url="https://ac3r5x7mdju.typeform.com/to/rtYZocCD" />
         </Modal.Body>
       </Modal>
       {/* End of Modal Code */}
