@@ -4,7 +4,7 @@ class Footer extends Component {
     render() {
         return (
             <footer className="footer bg-black small text-center text-white-50">
-                <div className="container">Copyright © 2016 R.S Technology.</div>
+                <div className="container">Copyright © 2021 Rhabdom Solution Pvt Ltd.</div>
             </footer>
 )
     }
