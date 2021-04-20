@@ -410,31 +410,16 @@ class home extends Component {
           <Modal.Title>Empty Popup</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p><strong>Jonathan Doe Limited Company</strong></p>
-          <div className="row">
-            <div className="col-2"><p className="grey-text">Address Line 1: </p></div>
-            <div className="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-          </div>
-          <div className="row">
-            <div className="col-2"><p className="grey-text">Address Line 2: </p></div>
-            <div className="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-          </div>
-          <div className="row">
-            <div className="col-2"><p className="grey-text">City: </p></div>
-            <div className="col"><p>CityName</p></div>
-          </div>
-          <div className="row">
-            <div className="col-2"><p className="grey-text">State: </p></div>
-            <div className="col"><p>StateName</p></div>
-          </div>
-          <div className="row">
-            <div className="col-2"><p className="grey-text">Country: </p></div>
-            <div className="col"><p>US</p></div>
-          </div>
-          <div className="row">
-            <div className="col-2"><p className="grey-text">ZipCode: </p></div>
-            <div className="col"><p>110022.</p></div>
-          </div>
+            <a className="typeform-share button" href="https://form.typeform.com/to/rtYZocCD?typeform-medium=embed-snippet" data-mode="popup" style={{display:'inline-block', textDecoration:'none', backgroundColor:'#0445AF', color:'white', cursor:'pointer', fontFamily:'Helvetica,Arial,sans-serif',fontSize:20 + 'px', lineHeight:50 + 'px', textAlign:'center', margin:0 , height:50 + 'px', padding:0+'px ' + 33+'px ', borderRadius:25+'px', maxWidth:100+'%',whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis',fontWeight:bold}} data-size="100" target="_blank">Launch me </a> 
+            {/* <script> 
+                (function() { 
+                let qs,js,q,s,d=document;
+                let gi=d.getElementById;
+                let ce=d.createElement
+                let gt=d.getElementsByTagName
+                let id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) 
+                } })() 
+            </script> */}
         </Modal.Body>
       </Modal>
       {/* End of Modal Code */}
