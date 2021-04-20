@@ -3,6 +3,9 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import MastHead from '../assets/img/bg-masthead.jpg';
 import SmartSewaLogo from '../assets/img/clients/smartsewa.svg';
+import Orion from '../assets/img/clients/orion.jpg';
+import Arthale from '../assets/img/clients/arthale.jpg';
+import Strider from '../assets/img/clients/strider.jpg';
 import User from '../assets/img/user.jpg';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -247,14 +250,17 @@ class home extends Component {
                     <p>Meet our happy clients</p>
                 </div>
                 <div className="row no-gutters clients-wrap clearfix" >
-                    <div className="col-lg-4 col-md-4 col-xs-6">
+                    <div className="col-lg-3 col-md-3 col-xs-6">
                         <div className="client-logo"> <img src={SmartSewaLogo} className="img-fluid" alt="smartsewa"/> </div>
                     </div>
-                    <div className="col-lg-4 col-md-4 col-xs-6">
-                        <div className="client-logo"> <img src={SmartSewaLogo} className="img-fluid" alt="client2"/> </div>
+                    <div className="col-lg-3 col-md-3 col-xs-6">
+                        <div className="client-logo"> <img src={Orion} className="img-fluid" alt="client2"/> </div>
                     </div>
-                    <div className="col-lg-4 col-md-4 col-xs-6">
-                        <div className="client-logo"> <img src={SmartSewaLogo} className="img-fluid" alt="client3"/> </div>
+                    <div className="col-lg-3 col-md-3 col-xs-6">
+                        <div className="client-logo"> <img src={Arthale} className="img-fluid" alt="client3"/> </div>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-xs-6">
+                        <div className="client-logo"> <img src={Strider} className="img-fluid" alt="client4"/> </div>
                     </div>
                 </div>
             </div>
@@ -396,6 +402,7 @@ class home extends Component {
         </section>
         <a className="float" href="#" onClick={this.viewAddressModalShow.bind(this)}>
         <i className="fa fa-plus my-float"></i>
+        <span class="tooltiptext">Need Assistance</span>
         </a>
        {/* Show Address Modal */}
       <Modal
