@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import MastHead from '../assets/img/bg-masthead.jpg';
+import SmartSewaLogo from '../assets/img/clients/smartsewa.svg';
 import User from '../assets/img/user.jpg';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -26,7 +27,7 @@ class home extends Component {
     render() {
         return (
             <div className="wrapper">
-                <Header />
+            <Header />
         <header className="masthead">
             <div className="container d-flex h-100 align-items-center">
                 <div className="mx-auto text-center">
@@ -42,7 +43,7 @@ class home extends Component {
                     <div className="col-lg-8 mx-auto">
                         <h2 className="text-white mb-4">ABOUT</h2>
                         <p className="text-white-50">
-                        RS Technology was founded with a vision to push the boundaries and bring high quality technological solutions to everyone. We hold expertise in providing customized Web solutions for your business. We are relentless in moving boundaries and carry out this spirited attitude into Web solutions. Solutions that engage, inspire and make you think.
+                        RHABDOM Solutions was founded with a vision to push the boundaries and bring high quality technological solutions to everyone. We hold expertise in providing customized Web solutions for your business. We are relentless in moving boundaries and carry out this spirited attitude into Web solutions. Solutions that engage, inspire and make you think.
                         </p>
                     </div>
                 </div>
@@ -121,7 +122,7 @@ class home extends Component {
                                 <h4 className="text-uppercase m-0 text-white">WEB DEVELOPMENT</h4>
                                 <hr className="my-4 bg-light" />
                                 <div className="small text-white">
-                                <p className="mb-0 text-white-50">We at RS Tech will assist you with the creation of fabulous web application. We will endure you with the best designs any kind of web development which you are looking for your grooming up the image for your organization.</p>
+                                <p className="mb-0 text-white-50">We at RHABDOM Solutions will assist you with the creation of fabulous web application. We will endure you with the best designs any kind of web development which you are looking for your grooming up the image for your organization.</p>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +160,7 @@ class home extends Component {
                     <div className="col-lg-8 mx-auto">
                         <h2 className="text-white mb-4">TECHNOLOGY WE USE</h2>
                         <p className="text-white-50">
-                        RS Technology was founded with a vision to push the boundaries and bring high quality technological solutions to everyone. We hold expertise in providing customized Web solutions for your business. We are relentless in moving boundaries and carry out this spirited attitude into Web solutions. Solutions that engage, inspire and make you think.
+                        RHABDOM Solutions was founded with a vision to push the boundaries and bring high quality technological solutions to everyone. We hold expertise in providing customized Web solutions for your business. We are relentless in moving boundaries and carry out this spirited attitude into Web solutions. Solutions that engage, inspire and make you think.
                         </p>
                     </div>
                 </div>
@@ -247,22 +248,21 @@ class home extends Component {
                 </div>
                 <div className="row no-gutters clients-wrap clearfix" >
                     <div className="col-lg-4 col-md-4 col-xs-6">
-                        <div className="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460149/abof.png" className="img-fluid" alt=""/> </div>
+                        <div className="client-logo"> <img src={SmartSewaLogo} className="img-fluid" alt="smartsewa"/> </div>
                     </div>
                     <div className="col-lg-4 col-md-4 col-xs-6">
-                        <div className="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460224/cropped-cropped-20170720-lucuLogo-squ2-e1500543540803.png" className="img-fluid" alt=""/> </div>
+                        <div className="client-logo"> <img src={SmartSewaLogo} className="img-fluid" alt="client2"/> </div>
                     </div>
                     <div className="col-lg-4 col-md-4 col-xs-6">
-                        <div className="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460269/104840a62d46c05d285762857fecb61a.png" className="img-fluid" alt=""/> </div>
+                        <div className="client-logo"> <img src={SmartSewaLogo} className="img-fluid" alt="client3"/> </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="clients" className="section-bg">
+        {/* <section id="clients" className="section-bg">
             <div className="container">
                 <div className="section-header">
                     <h3>Testimonials</h3>
-                    {/* <p>Meet our happy clients</p> */}
                 </div>
                 <div>
                 <Carousel className="testimonial-carousel" controls={false}>
@@ -320,7 +320,7 @@ class home extends Component {
                 </Carousel>
                 </div>
             </div>
-        </section>
+        </section> */}
         <section className="signup-section bg-light" id="signup">
             <div className="container">
                 <div className="row">
@@ -394,8 +394,8 @@ class home extends Component {
                 </div> */}
             </div>
         </section>
-        <a class="float" onClick={this.viewAddressModalShow.bind(this)}>
-        <i class="fa fa-plus my-float"></i>
+        <a className="float" href="#" onClick={this.viewAddressModalShow.bind(this)}>
+        <i className="fa fa-plus my-float"></i>
         </a>
        {/* Show Address Modal */}
       <Modal

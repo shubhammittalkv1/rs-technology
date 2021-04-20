@@ -1,5 +1,8 @@
 import './App.css';
+import 'jquery/dist/jquery.min.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.css';
+import './assets/styles/style.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import home from '././pages/home.js';
